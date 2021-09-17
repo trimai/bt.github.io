@@ -1,0 +1,149 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 15px
+}
+.container {
+    width: 1200px;
+    margin: 0 auto
+}
+.header {
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    background-color: #F9CE1D;
+}
+.logo {
+    float: left;
+    width: 100px;
+    height: 60px;
+    padding-top: 8px
+}
+/*bat dau menu*/
+header nav{ float: right}
+header nav ul { list-style: none; padding:0; margin: 10px} /* mđinh,, có chấm (cần bỏ chấm), padding-left:42px; margin:19px*/
+header nav ul li{ float: left; position: relative}
+header nav ul li a{ padding: 10px 15px ;display: block; text-decoration: none;color: #484848}
+header nav ul li a:hover{ background-color: #056CB6; color: #fff}
+/*---- ------------style cho  menu-con ----------------------------------*/
+header nav ul ul{ position: absolute; left: -10px; top: 20px; background-color: #056CB6; width: 220px; display: none}
+header nav ul ul li { float: none; height: 35px; border-bottom: 1px solid #ccc; line-height: 35px}
+header nav ul ul li a{ color: #fff ; padding-top: 0; padding-bottom: 0 }
+header nav ul ul li a:hover{ background:#F2C94C }
+header nav ul li:hover >ul{ display: block}
+
+.banner {
+    min-height: 400px;
+    width: 100%;
+    background-color: #F8B409
+}
+.img100 {
+    width: 100%;
+    height: auto;
+}
+.text-center {
+    text-align: center
+}
+.sidebar {
+    width: 25%;
+    float: left;
+    background-color: #DDE29A;
+    min-height: 500px
+}
+.sidebar h3 {
+    color: #5B85F8;
+    font-size: 18px;
+    padding-top: 15px
+}
+.content {
+    width: 75%;
+    padding: 10px;
+    float: right;
+    background-color: #5B85F8;
+    color: white;
+    min-height: 500px
+}
+.text-vang {
+    color: #F8D42B
+}
+.vien-phai {
+    border-right: 1px solid white
+}
+.vien-trai {
+    border-left: 1px solid white
+}
+.footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #F9CE1D;
+    color: #6D6D6D;
+    clear: both;
+    min-height: 200px
+}
+.w25 {
+    width: 25%;
+    padding: 10px;
+    float: left
+}
+.w75 {
+    width: 75%;
+    padding: 10px;
+    float: left
+}
+.w50 {
+    width: 50%;
+    padding: 10px;
+    float: left
+}
+.w66 {
+    width: 66%;
+    padding: 10px;
+    float: left
+}
+.w33 {
+    width: 34%;
+    padding: 10px;
+    float: left
+}
+.fleft {
+    float: left;
+    padding-right: 10px
+}
+.fright {
+    float: right
+}
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.sidebar ul li {
+    height: 40px;
+    border-bottom: #1D1C6A 1px dotted;
+    line-height: 40px
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #1D1C6A;
+    padding-left: 20px;
+    display: block
+}
+.sidebar ul li a:hover {
+    background-color: #F9CE1D;
+    font-weight: bold
+}
+.nd {
+    margin-top: 10px
+}
+.w33 a {
+    text-decoration: none;
+    color: white
+}
+.w33 a:hover {
+    color: #F8D42B
+}

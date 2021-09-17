@@ -1,0 +1,25 @@
+@charset "utf-8";
+*{box-sizing: border-box}
+body{margin: 0;padding: 0;font-family: arial;font-size: 16px}
+.container{width: 1200px; margin: 0 auto}
+header {
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    background-color: #F9CE1D;
+}
+header .menu{float: right;}
+header .menu ul{list-style: none;padding: 0; margin: 0px}
+header .menu ul li{float: left;position: relative}
+header .menu ul li a{text-decoration: none;text-transform: uppercase;color: #515151;padding: 10px 15px}
+header .menu ul li a:hover{color: white;background-color: #056CB6}
+/*phần menu cấp 2*/
+header .menu ul ul{position: absolute;left: 0;top: 60px;width: 270px;background-color:#056CB6;display: none}
+header .menu ul ul li{float: none;height: 35px;line-height: 35px;border-bottom: 1px solid white}
+header .menu ul ul li a{color: white;padding-top: 0;padding-bottom: 0;display: block}
+header .menu ul ul li a:hover{background:#F2C94C}
+
+header .menu ul li:hover>ul{display: block}
+.logo{float: left;width: 120px; height: 50px;margin-top: 12px}
+.img100{width: 100%;height: auto}
+.banner{min-height: 400px; width: 100%;background: #F9CE1D}

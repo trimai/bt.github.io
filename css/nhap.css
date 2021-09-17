@@ -1,0 +1,43 @@
+@charset "utf-8";
+	*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{font-size: 16px; font-family: arial;}
+header{background: yellow;}
+.container{width: 80%;margin: 0 auto;display: flex;justify-content: space-between}
+.logo{height: 60px;width: 11%}
+.img100{width: 100%;height: auto}
+.menu-area{width: 80%;height: 40px;line-height: 40px;margin-top: 8px}
+.menu-area ul{list-style: none;display: flex}
+.menu-area ul li{width: 100%;position: relative;text-align: center}
+.menu-area ul li a{text-decoration: none;color:white;font-size: 17px;text-transform: uppercase;display: block;background-color:#576FFF;}
+.menu-area ul li a:hover{background-color:yellow;color:#484848}
+
+.dropdown-1{position: absolute;left: 0;width: 100%;display: flex;flex-direction: column;background-color:#576FFF;color: white;}
+.dropdown-1 li{display: none;position: relative;border-bottom: 1px dotted white}
+.menu-area ul li:hover .dropdown-1 > li{display: block;top: 0}
+
+.dropdown-2{position: absolute;left: 101%;top: 0;display: flex;flex-direction: column;width: 100%;box-shadow: -5px 5px 10px #eee}
+.dropdown-2 li{display: none}
+.dropdown-1 li:hover .dropdown-2 > li{display: block}
+
+
+.banner-area{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://i.postimg.cc/Y0YM36yL/aa.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+}
+.banner-area h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 100px;
+	font-family: poppins;
+	letter-spacing: 2px;
+}
